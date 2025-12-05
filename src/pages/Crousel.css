@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+.discountprice{
+    color: rgb(102, 102, 105) !important;
+}
+
+.marginButton{
+    margin-left: 12rem !important;
+}
+
+/* Responsive carousel width adjustments */
+@media (max-width:426px){
+    .crouserwidth{
+        width: 250px;
+        margin-bottom: -120px;
+        margin-top: -50px;
+    }
+}
+
+/* Carousel wrapper */
+.carousel-wrapper {
+    position: relative;
+    overflow: visible; /* ensure background text is visible */
+    padding-bottom: 60px; /* space for dots */
+}
+
+/* Slick dots positioning */
+.carousel-wrapper .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px !important;
+    z-index: 50;
+}
+
+/* Custom dot style */
+.carousel-wrapper .slick-dots li div.custom-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.5;
+}
+
+/* Active dot */
+.carousel-wrapper .slick-dots li.slick-active div.custom-dot {
+    background: #ff0000 !important;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Make slides overflow visible */
+.slick-slide {
+    overflow: visible !important;
+}
+/* Background type text */
+.type-bg-text {
+    position: absolute;
+    top: 5%; /* move it slightly to top */
+    left: 30%; /* move slightly left from center */
+    transform: translateX(-50%); /* adjust horizontal centering */
+    font-size: 20rem; /* default for mobile */
+    color: darkgray; /* gray color */
+    font-weight: bold;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Large screens for type-bg-text */
+@media (min-width: 768px){
+    .type-bg-text {
+        font-size: 12rem;
+    }
+}
+
+
+/* Slide content ensures foreground text is above background */
+.slide-content {
+    position: relative;
+    z-index: 10;
+}

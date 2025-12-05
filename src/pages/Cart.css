@@ -1,0 +1,110 @@
+.y_scrolling {
+    background-color: rgb(42, 41, 41) !important;
+    width: 100%;
+}
+
+
+
+.font_mute_cart {
+    color: rgb(82, 80, 80);
+}
+
+/* --- Mobile View Styles (screens up to 575.98px) --- */
+@media (max-width: 575.98px) {
+    .y_scrolling {
+        /* On small phones, height is auto, with an optional max-height */
+        height: auto;
+        max-height: 400px; /* Adjust this as needed for your content on mobile */
+        /* Ensure scrolling is enabled if content exceeds max-height */
+        overflow-y: auto; /* Use auto for mobile so scrollbar only appears when needed */
+    }
+
+    /* Adjust font size for better readability on small screens */
+    .y_scrolling h5 {
+        font-size: 1.2rem !important; /* Smaller heading for mobile */
+    }
+
+    .y_scrolling p.card-text {
+        font-size: 1rem !important; /* Smaller price text for mobile */
+    }
+
+    /* Center the quantity input group on small screens */
+    .input-group {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Reset/default scrollbar appearance for mobile (system default) */
+    .y_scrolling {
+        scrollbar-width: auto; /* Firefox default */
+        scrollbar-color: auto; /* Firefox default */
+    }
+    .y_scrolling::-webkit-scrollbar {
+        width: auto; /* WebKit default width */
+        height: auto; /* WebKit default height */
+    }
+    .y_scrolling::-webkit-scrollbar-track {
+        background: initial; /* WebKit default background */
+    }
+    .y_scrolling::-webkit-scrollbar-thumb {
+        background-color: initial; /* WebKit default thumb color */
+        border-radius: initial;
+        border: initial;
+        background-clip: initial;
+    }
+}
+
+
+/* --- Tablet and Laptop View Styles (screens 576px and wider) --- */
+@media (min-width: 576px) {
+    .y_scrolling {
+        height: 500px; /* Fixed height for tablet/laptop views */
+        overflow-y: scroll; /* **This is crucial for enabling scrolling and making it visible** */
+    }
+
+    /* Custom Scrollbar Styles for WebKit browsers (Chrome, Safari, Edge, Opera) */
+    .y_scrolling::-webkit-scrollbar {
+        width: 12px; /* Width of the vertical scrollbar */
+    }
+
+    .y_scrolling::-webkit-scrollbar-track {
+        background: rgb(60, 60, 60); /* Dark gray background for the track */
+        border-radius: 10px;
+    }
+
+    .y_scrolling::-webkit-scrollbar-thumb {
+        background-color: #ff4500; /* Red color for the scrollbar thumb */
+        border-radius: 10px;
+        border: 3px solid rgb(60, 60, 60); /* Matches track color for a cleaner look */
+    }
+
+    /* Custom Scrollbar Styles for Firefox */
+    .y_scrolling {
+        scrollbar-width: thin; /* 'auto' or 'thin' - 'thin' is less intrusive */
+        scrollbar-color: #ff4500 rgb(60, 60, 60); /* thumb color (red) track color (dark gray) */
+    }
+}
+.gjhjgf{
+    width: 200px !important;
+    height: 250px !important;
+    margin-bottom: -70px;
+    /* background-color: aqua !important; */
+    color:#e60a0a !important;
+    /* text-align: center; */
+    /* display: flex; */
+    /* border-radius: 50% !important; */    
+}
+.textttt{
+     display: flex;
+    justify-content: center;
+
+}
+.fonbol{
+    font-size: 15px;
+    background-color: #e60a0a !important;
+      
+}
+.qpqp{
+    text-decoration: none !important;
+}
+

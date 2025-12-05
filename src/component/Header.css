@@ -1,0 +1,264 @@
+.navlogo1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white !important;
+  font-size: 2.5rem !important;
+
+
+}
+
+.si {
+  font-size: 40px !important;
+}
+
+.icon-group i {
+  font-size: 1.6rem !important;
+  cursor: pointer;
+  color: white !important;
+}
+
+.user_font {
+  color: white !important;
+
+}
+
+.user_font:hover {
+  color: white !important;
+}
+
+.btn_user {
+  background-color: none !important;
+  border: solid 2px white !important;
+
+}
+
+.bg_user {
+  background-color: rgb(56, 55, 55) !important;
+}
+
+.hr-or-hr {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hr-or-hr hr {
+  flex: 1;
+  height: 2px;
+  background-color: #000 !important;
+  border: none;
+}
+
+.hr-or-hr span {
+  padding: 0 10px !important;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.sign_size {
+  font-size: 1.3rem !important;
+}
+
+.button_facebook {
+  background-color: rgba(52, 14, 188, 0.856) !important;
+  color: white;
+
+}
+
+.button_google {
+  background-color: red !important;
+  color: white;
+}
+
+.button_twitter {
+  background-color: rgba(25, 142, 209, 0.986) !important;
+  color: white;
+}
+
+.btn-close.btn-close-white {
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E"); */
+  /* background-size: 3em; */
+  background-color: white;
+  color: white !important;
+}
+
+.input_text {
+  color: red !important;
+}
+
+body::selection {
+  background-color: red ;
+}
+
+@media only screen and (max-width: 768px) {
+  .dropdown-menu {
+    max-width: 100vw;
+    overflow-x: hidden;
+    left: auto !important;
+    right: 0;
+  }
+}
+
+@media (max-width: 319px) {
+  .navbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1rem;
+  }
+
+  .icon-group {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon-group i {
+    font-size: 1.4rem;
+    padding: 0 10px !important;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin-top: 1rem !important;
+  }
+
+  .dropdown-menu .card-body {
+    padding: 1rem !important;
+  }
+
+  .btn_user {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    padding: 0.5rem;
+  }
+
+  .navbar .navlogo1 {
+    font-size: 1.5rem;
+    /* Smaller font for very small screen */
+    flex: 1 1 auto;
+    margin-right: 0.5rem;
+  }
+
+  .icon-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+  }
+
+  .icon-group i {
+    font-size: 1.2rem;
+    padding: 0 4px;
+  }
+
+  .btn-group .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+  }
+
+  .btn_user {
+    font-size: 0.8rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .button_facebook {
+    font-size: 0.5rem !important;
+    padding: 0.5rem 0.5rem 0.5rem 0.3rem !important;
+  }
+  .userspa{
+    padding-left: 1rem;
+  }
+  .searchboxx{
+    width: 100% !important;
+    margin-top: 2px;
+  }
+
+  .button_google {
+    font-size: 0.5rem !important;
+    padding: 0.5rem 0.5rem !important;
+  }
+
+  .button_twitter {
+    font-size: 0.5rem !important;
+    padding: 0.5rem 0.5rem !important;
+  }
+}
+
+@media (min-width:767px) {
+  .ooo {
+    /* background-color: aqua !important; */
+    margin-left: -37px;
+  }
+
+
+
+}
+
+.icons_hover_zoome:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+  @media (max-width:385px) {
+    .navlogo1{
+      font-size: 1.5rem !important;
+      /* margin-right: 20px !important; */
+      /* padding-right: 10px !important; */
+    }
+   
+    .user_set_small{
+      /* padding-left: 20px !important; */
+      margin-right: -20px !important;
+    }
+      
+  
+  }
+
+
+.icons_hover_zoome {
+  color: white !important;
+  /* font-size: 2.2rem;  */
+}
+.searColor{
+    font-size: 5.3rem !important;
+}
+.cartSizes{
+  font-size: 2.3rem !important;
+}
+.userSizes{
+  font-size: 2.6rem !important;
+}
+.borderseconf{
+  border-color: rgb(35, 38, 40,1) !important;
+}
+.linknoness{
+  /* text-decoration:none !important; */
+  /* background-color: red !important; */
+  color: aliceblue !important;
+  /* padding: 500px !important;  */
+}
+.boooo{
+ border: 2px solid white;
+}

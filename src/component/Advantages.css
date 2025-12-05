@@ -1,0 +1,214 @@
+.crousel_height{
+    min-height: 500px;
+    height: auto;
+
+}
+/* @media (max-width:426pc){
+    .cont_first{
+        font-size: 3vw;
+    }
+    .cont_sec{
+        font-size:10px !important;
+    }
+} */
+
+
+
+body {
+  overflow-x: hidden;
+}
+.carousel-container {
+      width: 100%;
+      overflow: hidden;
+      padding: 40px 0;
+      background:black;
+      height: auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item-custom {
+      flex: 0 0 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .carousel-item-custom img {
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+
+    .carousel-item-custom:hover {
+      transform: scale(1.2);
+    }
+    /* .carousel-item-custom p:hover {
+      transform: scale(1.2);
+    }
+    .carousel-item-custom h4:hover {
+      transform: scale(1.2);
+    } */
+
+    /* Sizes */
+    .carousel-item-custom:nth-child(1) img,
+    .carousel-item-custom:nth-child(5) img {
+      width: 8vw;
+      height: 8vw;
+    }
+
+    .carousel-item-custom:nth-child(2) img,
+    .carousel-item-custom:nth-child(4) img {
+      width: 11vw;
+      height: 11vw;
+    }
+
+    .carousel-item-custom:nth-child(3) img {
+      width: 15vw;
+      height: 15vw;
+    }
+    .product_font_carousel{
+      color: white !important;
+      
+    }
+    .product_font_head{
+      color: white;
+      
+    }
+
+    /* Responsive image sizes */
+    @media (max-width: 768px) {
+      .carousel-item-custom:nth-child(1) img,
+      .carousel-item-custom:nth-child(5) img {
+        width: 8vw;
+        height: 8vw;
+      }
+
+      .carousel-item-custom:nth-child(2) img,
+      .carousel-item-custom:nth-child(4) img {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      .carousel-item-custom:nth-child(3) img {
+        width: 13vw;
+        height: 13vw;
+    }
+    .product_font_carousel{
+      color: white !important;
+      font-size: 0.6rem;
+    }
+    .product_font_head{
+      color: white;
+      font-size: 1.0rem;
+    }
+  }
+  .button-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 0 10px;
+    }
+
+    .button-container button {
+      flex: 1 0 auto;
+      padding: 12px 0;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .button-container button:hover {
+      background-color: rgba(208, 6, 6, 0.999);
+    }
+
+    .button_fist_prod {
+      background-color: rgba(208, 6, 6, 0.999) !important;
+    }
+
+    @media (max-width: 425px) {
+      .button-container {
+        gap: 8px;
+        padding: 0 5px;
+      }
+
+      .button-container button {
+        font-size: 0.8rem;
+        padding: 8px 0;
+      }
+    }
+
+    @media (min-width: 450px) and (max-width: 789px) {
+      .column_small_deci>.custom-col {
+        flex: 0 0 auto;
+        width: 33.3333%;
+      }
+    }
+
+    .card_font_s {
+      color: white !important;
+    }
+
+    .font_mute_c {
+      color: rgb(82, 80, 80);
+    }
+    .feature-card {
+      display: flex;
+      align-items: center;
+      /* background-color:black; */
+      color:white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .icon-box {
+      font-size: 2rem;
+      color: #ea061d;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .text-box .feature-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .text-box .feature-text {
+      font-size: 0.85rem;
+      margin: 0;
+    }
+
+    @media (max-width: 426px) {
+      .icon-box {
+        font-size: 1.4rem;
+        margin-right: 8px;
+      }
+
+      .text-box .feature-title {
+        font-size: 0.55rem;
+      }
+
+      .text-box .feature-text {
+        font-size: 0.45rem;
+      }
+
+      .feature-card {
+        padding: 8px 10px;
+      }
+    }
+    .card_button_bottom{
+      background-color: red;
+      color: white;
+    }

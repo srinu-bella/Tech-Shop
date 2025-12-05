@@ -1,0 +1,146 @@
+.button_facebook {
+    background-color: rgba(230, 22, 22, 0.97) !important;
+    color: white !important;
+
+    width: 8.2rem;
+
+}
+
+.footer_inputs {
+    background-color: #333 !important;
+    border: solid 1px white !important;
+    color: white !important;
+
+
+
+}
+
+/* footer ul {
+  text-align: left !important;
+} */
+
+
+.footer_inputs::placeholder {
+    color: white !important;
+    /* or any color you want */
+    opacity: 1;
+    /* optional: ensures full visibility */
+}
+
+/* .dec {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+} */
+@media (max-width:426px) {
+    .footer_first_align {
+        text-align: center !important;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+footer {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer_hover:hover {
+    color: red !important;
+}
+
+body::selection {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+
+
+}
+
+@media (min-width:767px) {
+    .dec1 {
+        margin-left: -40px;
+    }
+
+    .dec2 {
+        margin-left: -29px;
+    }
+
+    .dec3 {
+        margin-left: 0px;
+    }
+
+    .dec4 {
+        margin-left: -45px;
+    }
+
+    .dec5 {
+        margin-left: -32px !important;
+    }
+}
+
+
+
+
+
+
+#k2 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#w2 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#w3 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#w4 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#m2 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#m3 {
+
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#m4 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+
+}
