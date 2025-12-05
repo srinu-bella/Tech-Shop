@@ -83,7 +83,7 @@ const Footer = () => {
                 <FaFacebookF className="fs-5" />
                 <FaTwitter className="fs-5" />
                 <FaInstagram className="fs-5" />
-                <FaLinkedinIn className="fs-5" />
+                <FaLinkedinIn className="fs-10" />
               </div>
             </div>
        </div>
