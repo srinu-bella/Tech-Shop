@@ -1,3 +1,5 @@
+
+
 import React, { useState, useRef, useContext } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
@@ -5,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { globalContext } from "../myCongtext/MyContext";
+import { globalContext } from "../myCongtext/MyContext"; // 👈 import context
 
 const Header = () => {
   // 🛒 Redux cart
@@ -68,7 +70,7 @@ const Header = () => {
 
             {/* Cart Icon */}
             <div className="position-relative d-inline-block text-white pe-md-5 px-2">
-              <Link to="/cart" className="linknoness">
+              <Link to="/cart " className="linknoness">
                 <FaShoppingCart size={20} />
                 <span className="ooo badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">
                   {cartCount}
@@ -108,6 +110,8 @@ const Header = () => {
         </div>
       </nav>
 
+      {/* Search Bar */}
+      {/* Search Bar */}
       {/* Search Bar */}
       {searchOpen && (
         <div
@@ -164,7 +168,9 @@ const Header = () => {
         </div>
       )}
 
-      {/* Modal for Login/Signup */}
+
+
+      {/* Modal for Login/Signup (your existing modal code) */}
       <Modal show={showModal} onHide={handleClose} centered size="md">
         <div className="modal-content bg-dark text-white">
           <div className="modal-header border-0">
@@ -174,7 +180,6 @@ const Header = () => {
               onClick={handleClose}
             ></button>
           </div>
-
           <div className="modal-body px-5">
             {isSignup ? (
               <div ref={signupRef}>

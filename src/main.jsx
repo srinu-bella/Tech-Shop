@@ -12,14 +12,11 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     <MyContext>
-
-
       <BrowserRouter>
         <Provider store={store}>
           <App />
         </Provider >
-
       </BrowserRouter>
     </MyContext>
-  </StrictMode>,
+  </StrictMode>
 )

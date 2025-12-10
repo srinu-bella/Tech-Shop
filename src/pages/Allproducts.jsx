@@ -76,7 +76,8 @@ const Sidebar = ({ setSort, filters, setFilters, priceRange, setPriceRange }) =>
                         <li onClick={() => setSort("featured")}>Featured</li>
                         <li onClick={() => setSort("topRated")}>Top Rated</li>
                         <li onClick={() => setSort("lowToHigh")}>Price (Lowest First)</li>
-                        <li onClick={() => setSort("highToLow")}>Price (Highest First)</li>                    </ul>
+                        <li onClick={() => setSort("highToLow")}>Price (Highest First)</li>
+                    </ul>
                 </div>
 
                 {/* Filter - Brands */}
@@ -107,7 +108,7 @@ const Sidebar = ({ setSort, filters, setFilters, priceRange, setPriceRange }) =>
                                     type="checkbox"
                                     checked={filters.category.includes(cat)}
                                     onChange={() => handleCheckboxChange("category", cat)}
-                                />
+                                />{" "}
                                 {cat}
                             </li>
                         ))}
@@ -183,7 +184,7 @@ const AllProductsPage = () => {
             <div className="flex-1 p-6">
                 <h2 className="text-2xl font-bold mb-6">All Products</h2>
                 {filteredProducts.length === 0 ? (
-                    <p className="text-gray-400">No products found</p>
+                    <p className="text-gray-400">No Products Found</p>
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {filteredProducts.map((product) => (
